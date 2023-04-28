@@ -1,0 +1,626 @@
+/* box sizing */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Poppins";
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+
+div li {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    color: hsl(257, 7%, 63%);
+    text-align: center;
+    list-style: none;
+    margin: 20px;
+}
+
+p {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    color: hsl(257, 7%, 63%);
+    text-align: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo {
+    margin: 30px;
+}
+
+.close-burger {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin: 30px 20px;
+}
+
+.burger {
+    display: inline-block;
+}
+
+.close {
+    display: none;
+}
+
+hr {
+    margin-top: 20px;
+    opacity: 0.2;
+    color: white;
+}
+
+.right-nav {
+    display: none;
+}
+
+nav {
+    text-align: center;
+    list-style: none;
+    padding: 35px 50px 35px;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    left: 20px;
+    width: 90%;
+    display: none;
+}
+
+
+header {
+    display: inline-block;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-links li:hover {
+    background-color: hsl(180, 66%, 49%);
+    padding: 10px 0;
+    border-radius: 50px;
+}
+
+.nav-links {
+    padding: 0;
+}
+
+header .nav-links li {
+    margin-top: 20px;
+    font-family: "Poppins";
+    font-size: 18px;
+    list-style: none;
+}
+
+.parent-container {
+    margin: auto;
+}
+
+.child-1 {
+    background-color: white;
+    object-fit: cover;
+    padding: 0;
+}
+
+.content {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.content-button {
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: white;
+}
+
+
+.working {
+    overflow-x: hidden;
+}
+
+.working img {
+    background-attachment: fixed;
+    object-fit: cover;
+    width: 480px;
+    margin-left: 20px;
+    z-index: 1;
+    float: left;
+}
+
+.child-2 {
+    background-image: url(images/bg-shorten-mobile.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
+    background-color: hsl(257, 27%, 26%);
+    margin: auto;
+    width: 95%;
+    position: relative;
+    border-radius: 15px;
+    top: 100px;
+    padding: 30px 0;
+}
+
+.container-1 {
+    margin: auto;
+}
+
+form {
+    margin: auto;
+    display: block;
+    position: relative;
+    font-family: "Poppins";
+    font-weight: 500;
+    z-index: 1;
+}
+
+input {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.input-warning {
+    border: 2px solid hsl(0, 87%, 67%);
+}
+
+.ph-warning::placeholder {
+    color: hsl(0, 87%, 67%);
+    opacity: 0.5;
+}
+
+form button {
+    width: 90%;
+    height: 50px;
+    margin: 40px auto auto;
+    display: block;
+    border-radius: 10px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+
+}
+
+span {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 90px;
+    margin: 0 0 0px 25px;
+    color: hsl(0, 87%, 67%);
+    font-family: "Poppins";
+}
+
+
+
+.child-3 {
+    background-color: ghostwhite;
+    display: block;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.sht-link {
+    margin: auto auto 20px;
+    display: block;
+    border-radius: 5px;
+    height: auto;
+    background-color: white;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+
+}
+
+.sht-link .original {
+    color: hsl(260, 8%, 14%);
+    padding: 10px;
+    text-align: left;
+}
+
+.sht-link p {
+    color: hsl(180, 66%, 49%);
+    margin-right: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    padding: 0 10px 10px;
+
+}
+
+.link-rule {
+    margin-top: 0px;
+    opacity: 0.2;
+    color: hsl(260, 8%, 14%);
+}
+
+.sht-link button {
+    border-radius: 5px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    margin: 0 0 10px 10px;
+    width: 95%;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.child-3b,
+.child-3c,
+.child-3d {
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+
+.icon-holder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: hsl(257, 27%, 26%);
+    display: block;
+    margin: auto auto;
+    position: relative;
+    bottom: 40px;
+}
+
+.rule::before {
+    content: "";
+    width: 8px;
+    height: 75%;
+    background-color: hsl(180, 66%, 49%);
+    position: absolute;
+    display: block;
+    margin: auto;
+    bottom: 80px;
+    right: 37px;
+    display: block;
+}
+
+
+.icon-holder img {
+    position: relative;
+    top: 20px;
+    margin: auto;
+    display: block;
+    background-attachment: fixed;
+}
+
+.child-4 {
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(images/bg-boost-mobile.svg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    padding: 70px 0;
+}
+
+.child-4 .content {
+    z-index: 2;
+    color: aliceblue;
+    vertical-align: middle;
+}
+
+.child-5 {
+    background-color: hsl(260, 8%, 14%);
+    color: white;
+}
+
+.child-5 li:hover {
+    color: hsl(180, 66%, 49%);
+    cursor: pointer;
+}
+
+.social img:hover {
+    fill: hsl(180, 66%, 49%);
+    cursor: pointer;
+}
+
+.shortly {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+div h4 {
+    margin: 40px 0;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+
+    h1,
+    h3 {
+        font-size: 50px;
+    }
+
+    article {
+        width: 50%;
+        margin: auto;
+    }
+
+    hr,
+    .close-burger,
+    .login,
+    .sign {
+        display: none;
+    }
+
+    header {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    nav {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+        margin: 0;
+        position: relative;
+        left: auto;
+        width: auto;
+        display: block;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 0 10px;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .nav-links li:hover {
+        background-color: transparent;
+        padding: 0;
+        border-radius: initial;
+    }
+
+    .right-nav li,
+    .right-nav {
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+
+    .nav-links a,
+    .login a,
+    .sign a {
+        color: hsl(260, 8%, 14%);
+        text-decoration: none;
+        opacity: 0.5;
+    }
+
+    .sign button {
+        background-color: hsl(180, 66%, 49%);
+        border: none;
+        border-radius: 20px;
+        padding: 5px 15px;
+    }
+
+    .sign button:hover,
+    .content-button:hover,
+    form button:hover,
+    .sht-link button:hover {
+        opacity: 0.5;
+    }
+
+    .nav-links a:hover,
+    .login a:hover {
+        opacity: 1;
+
+    }
+
+    .child-1 {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 50px;
+    }
+
+    .working img {
+        width: auto;
+        margin-left: 120px;
+    }
+
+    .c1-text {
+        margin: 100px 30px 0 150px;
+        width: 40%;
+    }
+
+    .c1-text h1,
+    .c1-text p,
+    .c1-text {
+        text-align: left;
+    }
+
+    .child-2 {
+        background-image: url(images/bg-shorten-desktop.svg);
+        width: 75%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: auto auto;
+        position: relative;
+        top: 11vh;
+        display: flex;
+        justify-content: center;
+        padding: 75px 0;
+    }
+
+    span {
+        position: absolute;
+        left: 0;
+        margin: 15px 0 0px 80px;
+    }
+
+    .sht-link {
+        margin: auto;
+        position: relative;
+        bottom: 20px;
+        margin-bottom: 20px;
+        width: 76%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sht-link .original {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .sht-link p {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 0;
+
+    }
+
+    .sht-link button {
+        margin: 0 20px;
+        width: auto;
+    }
+
+    .sht-link .short {
+        margin-right: 0px;
+        padding-top: 10px;
+    }
+
+    form {
+        position: absolute;
+        display: flex;
+        width: 90%;
+        top: 35%;
+    }
+
+    input {
+        display: block;
+        width: 700px;
+        margin: 0 20px;
+        flex-shrink: 1;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    form button {
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .container-1 {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 15px;
+        margin: 0 130px 100px;
+    }
+
+    .container-1 .content {
+        padding-top: 0;
+        grid-column: span 3;
+    }
+
+    .child-3c {
+        position: relative;
+        top: 50px;
+        z-index: 5;
+    }
+
+
+    .child-3d {
+        position: relative;
+        top: 100px;
+    }
+
+    .icon-holder {
+        margin: 0px auto auto;
+        right: 30%;
+    }
+
+
+    .rule::before {
+        display: none;
+    }
+
+
+    .child-4 {
+        background-image: url(images/bg-boost-desktop.svg);
+        background-position: right;
+        background-size: cover;
+    }
+
+    .child-5 {
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1;
+        padding-top: 50px;
+    }
+
+    .social {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    div h4 {
+        margin: 0;
+    }
+
+    .shortly {
+        margin-top: 0;
+        padding-right: 70px;
+    }
+
+}
