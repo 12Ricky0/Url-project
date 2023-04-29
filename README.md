@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![./Shorten-URL.png](./screenshot.jpg)
+![/Shorten-URL.png](./screenshot.jpg)
 
 
 ### Links
